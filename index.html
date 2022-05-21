@@ -6,6 +6,7 @@
 </head>
 
 <body>
+
     <img src="./my-dolar.gif" />
     <h1>My Dolars</h1>
 
@@ -15,7 +16,7 @@
 
         <p>$ 0</p>
 
-        <button>Converter</button>
+        <button onclick="calcularDolar()">Converter</button>
     </div>
   </body>
 
@@ -69,5 +70,24 @@
       }
 
   </style>
+
+  <script>
+
+      function calcularDolar(){
+          let real = document.getElementById("input-real").value
+          let dolar =
+          document.getElementById("input-dolar").value 
+
+          let resultado = real / dolar 
+
+          alert(resultado)
+      }
+
+
+
+
+  </script> 
+
+
 
 </html>
